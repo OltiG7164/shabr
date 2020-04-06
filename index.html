@@ -43,10 +43,10 @@ h4 {
   color: white;
 }
 .carousel {
-  width:40%;
+  width:60%;
   height:40%;
   margin: 3%;
-
+  left: 15%;
 }
 
 .center {
@@ -122,26 +122,26 @@ h4 {
 
 
 #card-place1 {
-  left: 50%;
-  bottom: 560px;
+  left: 0%;
+  bottom: 0%;
   position: relative;
 
 }
 #card-place2 {
-  left: 70%;
-  bottom: 560px;
+  left: 0%;
+  bottom: 0%;
   position: relative;
 
 }
 #card-place3 {
-  left: 50%;
-  bottom: 560px;
+  left: 0%;
+  bottom: 0%;
   position: relative;
 
 }
 #card-place4 {
-  left: 70%;
-  bottom: 560px;
+  left: 0%;
+  bottom: 0%;
   position: relative;
 
 }
@@ -163,7 +163,12 @@ h4 {
 }
 
 
+#testimonials-style {
+  bottom: 0px;
+  position: relative;
+  font-size: 14px;
 
+}
 
 
 
@@ -181,22 +186,42 @@ body {
 
 
 
+.header {
+  height: 100vh;
+
+}
+.navbar-style {
+  box-shadow: 0 5px 10px #FF4500;
+}
+
+
     </style>
   </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
 
 <!-- Navbar BELOW -->
-<nav class="navbar navbar-dark bg-dark navbar fixed-top" float="top">
+<nav class="navbar navbar-dark bg-dark  navbar-style" float="top">
   <a class="navbar-logo" href="#" id="navbar-text">
     <img src="img/hot-air-balloon-clipart.png" width="60" height="60" alt="logo">
     SHABR
   </a>
 
   <a href="">  </a>
+  <ul class="nav navbar-nav">
+     <h5>  <a href="#jumbotron-top">Learn More</a> </h5>
+     <h5>  <a href="#card-nav">Info</a></li> </h5>
+     <h5>  <a href="#testimonials-nav-place">Testimonials</a> </h5>
 
-
+  </ul>
 </nav>
+
+
+
+
+
+
+
 
 
 
@@ -216,7 +241,7 @@ body {
 <!-- Jumbotron BELOW -->
     <div class="jumbotron jumbotron-fluid" id="background-orange" class="col-sm" >
   <div class="container" >
-    <h1  class="display-4" ><strong>Skydance Hot Air Balloon Rides</strong></h1>
+    <h1  class="display-4" id="jumbotron-top"><strong>Skydance Hot Air Balloon Rides</strong></h1>
     <p class="lead">Flow and fly the crevices of nature's beauties. Ride with the wind. Dance with the sky.</p>
 
     <button type="button" id="button-margin" class="btn btn-outline-primary" data-toggle="popover" title="Fun for Everyone!" data-content="
@@ -237,13 +262,13 @@ Afraid of heights? You won't be after you slow-dance with the sky.">Click Here t
 
 <!-- Carousel BELOW -->
 
-<div id="carouselcycle" class="carousel slide" data-ride="carousel" class="col-sm">
-  <ol class="carousel-indicators">
+<div id="carouselcycle" class="carousel slide" data-ride="carousel" class="col-sm" >
+  <ol class="carousel-indicators" >
     <li data-target="#carouselcycle" data-slide-to="0" class="active" id="blue" class="col-md"></li>
     <li data-target="#carouselcycle" data-slide-to="1" id="blue" class="col-md"></li>
     <li data-target="#carouselcycle" data-slide-to="2" id="blue" class="col-md"></li>
   </ol>
-  <div class="carousel-inner" class="col-md">
+  <div class="carousel-inner" class="col-md" >
     <div class="carousel-item active" class="col-md">
       <img style="border:8px solid orange;" src="img/balloon-2.jpg" class="d-block w-100" alt="balloon-2" class = "img-responsive">
     </div>
@@ -269,8 +294,9 @@ Afraid of heights? You won't be after you slow-dance with the sky.">Click Here t
 
 
 <!-- INFO CARDS Below -->
+<div class="card-deck">
 <div class="card" style="width: 30rem;" id="card-place1" >
-  <div class="card-body" class="col-md">
+  <div class="card-body" class="col-md" id="card-nav">
     <h5 class="card-title" >Time</h5>
     <p class="card-text" >Due to climatic conditions, we can safely fly only in the early morning hours with our primary season and most beautiful months being May through November. Since our launch times vary through the seasons, we ask all our guests to call ahead for the exact meeting time.</p>
   </div>
@@ -298,15 +324,16 @@ Afraid of heights? You won't be after you slow-dance with the sky.">Click Here t
   </div>
 </div>
 
+</div>
 
 
-<p>
-  <a class="btn btn-secondary" data-toggle="collapse" href="#testimonials" role="button" aria-expanded="false" aria-controls="testimonials" id="collapse-position" >
+<p id="testimonials-nav-place" >
+  <a class="btn btn-secondary" data-toggle="collapse" href="#testimonials" role="button" aria-expanded="false" aria-controls="testimonials" id="collapse-position" id="testimonials-style" >
     Testimonials
   </a>
 </p>
-<div class="collapse" id="testimonials" id="collapse-position">
-  <div class="card card-body" id="collapse-position">
+<div class="collapse" id="testimonials" id="collapse-position" >
+  <div class="card card-body" id="collapse-position" >
    <li>"Thank you for a wonderful memory. I was smiling the entire time. We shall always cherish that morning!" -- Joan H.</li>
 
 <li>"I haven't come down to earth since our balloon ride. We are so pleased that we chose SHABR." -- Marsha N.</li>
@@ -325,9 +352,9 @@ Afraid of heights? You won't be after you slow-dance with the sky.">Click Here t
 <div class=center>
 
 
-<h4 id="contact-info">Contact: We’d love to hear from you
+<h4 id="contact-info" >Contact: We’d love to hear from you
 </h4>
-<h4 id="contact-info2">
+<h4 id="contact-info2" >
 Address
 SHABR, Inc.
 1234 Shabr Road
