@@ -47,6 +47,7 @@ h4 {
   height:40%;
   margin: 3%;
   left: 15%;
+
 }
 
 .center {
@@ -164,9 +165,9 @@ h4 {
 
 
 #testimonials-style {
-  bottom: 0px;
+  bottom: 0%;
   position: relative;
-  font-size: 14px;
+  font-size:16px;
 
 }
 
@@ -194,6 +195,10 @@ body {
   box-shadow: 0 5px 10px #FF4500;
 }
 
+#nav-float-top {
+  top: 0px;
+}
+
 
     </style>
   </head>
@@ -207,13 +212,13 @@ body {
     SHABR
   </a>
 
-  <a href="">  </a>
-  <ul class="nav navbar-nav">
+  <a href="" id="nav-float-top">  </a>
+  <!--<li class="nav navbar-nav">-->
      <h5>  <a href="#jumbotron-top">Learn More</a> </h5>
-     <h5>  <a href="#card-nav">Info</a></li> </h5>
+     <h5>  <a href="#card-nav">Info</a> </h5>
      <h5>  <a href="#testimonials-nav-place">Testimonials</a> </h5>
 
-  </ul>
+  <!--</li>-->
 </nav>
 
 
@@ -295,10 +300,10 @@ Afraid of heights? You won't be after you slow-dance with the sky.">Click Here t
 
 <!-- INFO CARDS Below -->
 <div class="card-deck">
-<div class="card" style="width: 30rem;" id="card-place1" >
-  <div class="card-body" class="col-md" id="card-nav">
-    <h5 class="card-title" >Time</h5>
-    <p class="card-text" >Due to climatic conditions, we can safely fly only in the early morning hours with our primary season and most beautiful months being May through November. Since our launch times vary through the seasons, we ask all our guests to call ahead for the exact meeting time.</p>
+<div class="card" style="width: 30rem;" id="card-place1"  >
+  <div class="card-body" class="col-md" >
+    <h5 class="card-title"  >Time</h5>
+    <p class="card-text" id="card-nav" >Due to climatic conditions, we can safely fly only in the early morning hours with our primary season and most beautiful months being May through November. Since our launch times vary through the seasons, we ask all our guests to call ahead for the exact meeting time.</p>
   </div>
 </div>
 
@@ -328,12 +333,12 @@ Afraid of heights? You won't be after you slow-dance with the sky.">Click Here t
 
 
 <p id="testimonials-nav-place" >
-  <a class="btn btn-secondary" data-toggle="collapse" href="#testimonials" role="button" aria-expanded="false" aria-controls="testimonials" id="collapse-position" id="testimonials-style" >
+  <a class="btn btn-secondary" data-toggle="collapse" href="#testimonials" role="button" aria-expanded="false" aria-controls="testimonials" id="collapse-position" style="font-size:28px">
     Testimonials
   </a>
 </p>
-<div class="collapse" id="testimonials" id="collapse-position" >
-  <div class="card card-body" id="collapse-position" >
+<div class="collapse" id="testimonials" id="collapse-position"  >
+  <div class="card card-body" id="collapse-position" id="testimonials-style" style="font-size:20px">
    <li>"Thank you for a wonderful memory. I was smiling the entire time. We shall always cherish that morning!" -- Joan H.</li>
 
 <li>"I haven't come down to earth since our balloon ride. We are so pleased that we chose SHABR." -- Marsha N.</li>
